@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "browserify -t hbsfy ./src/index.js -g uglifyify >  ./client/app.js",
+    "watch": "watchify -t hbsfy ./src/index.js -o ./client/app.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +22,13 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "bootstrap": "^3.3.7",
+    "browserify": "^14.4.0",
     "express": "^4.15.5",
+    "handlebars": "^4.0.10",
+    "hbsfy": "^2.7.0",
     "install": "^0.10.1",
-    "npm": "^5.4.2"
+    "jquery": "^3.2.1",
+    "npm": "^5.4.2",
+    "uglifyify": "^4.0.4"
   }
 }
