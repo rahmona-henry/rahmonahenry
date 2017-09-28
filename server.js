@@ -14,6 +14,19 @@ app.get('/', function (req,res) {
   res.send(index.html)
 })
 
+app.post('https://forms.hubspot.com/uploads/form/v2/3939197/0a73a010-469c-4fcd-a45f-d3b02bcbaea7', function(req,res){
+   console.log('this is,req.body',req.body)
+
+                           .then(function(data){
+                            //  console.log('this is data', data)
+                           res.send(index.html)
+                         })
+                         .catch(function(error){
+                           console.log('Error', error)
+                           res.redirect('/')
+                         })
+})
+
 
 ///Listen Route///////
 const port = process.env.PORT || 3000
