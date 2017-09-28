@@ -17,7 +17,7 @@ body {
   padding-top: 10px;
 }
 
-.section-title   li   {
+.section-title ol li   {
   font-size: 15px;
   font-weight: 500;
 }
@@ -26,11 +26,26 @@ body {
   padding-bottom: 10px;
 
 }
-
 .section-explaination h4 {
   color: #FF8000;
 }
 
+.section-goodbye a {
+    color: #FF8000;
+}
+
+.section-goodbye h5 {
+    color: #000000;
+}
+
+.section-technology a {
+    color: #FF8000;
+}
+
+.section-technology h4 {
+    color: #FF8000;
+    font-weight: 500;
+}
 .btn-submit-now,
 .btn-submit-now:active,
 .btn-submit-now:focus,
