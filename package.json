@@ -27,10 +27,13 @@
     "handlebars": "^4.0.10",
     "hbs": "^4.0.1",
     "hbsfy": "^2.7.0",
+    "https": "^1.0.0",
     "install": "^0.10.1",
     "jquery": "^3.2.1",
     "npm": "^5.4.2",
     "path": "^0.12.7",
+    "querystring": "^0.2.0",
+    "request": "^2.83.0",
     "uglifyify": "^4.0.4"
   }
 }
