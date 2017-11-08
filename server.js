@@ -16,7 +16,7 @@ app.get('/', function (req,res) {
 
 ///Post Routes/////
 app.post('https://forms.hubspot.com/uploads/form/v2/3939197/0a73a010-469c-4fcd-a45f-d3b02bcbaea7', function(req,res){
-    res.render('thankyou')
+    res.redirect('/thankyou')
      })
 
 ///Listen Route///////
